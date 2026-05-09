@@ -1,0 +1,14 @@
+{
+  "name": "ghb-addiction-daily",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node src/fetch-papers.mjs",
+    "report": "node src/generate-report.mjs",
+    "index": "node src/generate-index.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -58,9 +58,9 @@ jobs:
             echo "No papers found"
           fi
 
-      - name: Generate report with Zhipu AI
+      - name: Generate report with NVIDIA Nemotron
         env:
-          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           TARGET_DATE: ${{ steps.date.outputs.target }}
         run: node src/generate-report.mjs --input papers.json --output docs/ghb-${{ steps.date.outputs.target }}.html
 
